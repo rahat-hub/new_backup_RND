@@ -1,0 +1,166 @@
+name: aviation_rnd
+description: "Aviation RnD Flutter Project."
+
+publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+
+version: 1.0.0+74
+
+environment:
+  sdk: ^3.8.0 #'>=3.7.3 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  adaptive_theme: ^3.7.0
+  barcode_widget: ^2.0.4
+  connectivity_plus: ^6.1.4
+  crypto: ^3.0.6
+  csv: ^6.0.0
+  cupertino_icons: ^1.0.8
+  custom_pop_up_menu: ^1.2.4
+  device_info_plus: ^11.4.0
+  device_marketing_names: ^1.1.0
+  device_safety_info: ^1.0.0
+  dio: ^5.8.0+1
+  docx_template: ^0.4.0
+  dotted_border: ^3.0.1
+  dotted_line: ^3.2.3
+  encrypt: ^5.0.3
+  excel: ^4.0.6
+  file_picker: ^10.1.9
+  fl_chart: ^1.0.0
+  flutter_advanced_switch: ^3.1.0
+  flutter_cupertino_datetime_picker: ^3.0.0
+  flutter_device_imei: ^0.0.4
+  flutter_easyloading: ^3.0.5
+  flutter_form_builder: ^10.0.1
+  flutter_icons:
+    git:
+      url: https://github.com/Sayed-Siam123/flutter-icons-master.git
+      ref: master
+  flutter_pdfview: ^1.4.0+1
+  flutter_secure_storage: ^9.2.4
+  form_builder_validators: ^11.1.2
+  geocoding: ^4.0.0
+  geolocator: ^14.0.1
+  get: ^4.7.2
+  get_ip_address: ^0.0.7
+  get_storage: ^2.1.1
+  google_fonts: ^6.2.1
+  http: ^1.4.0
+  intl: ^0.20.2
+  liquid_progress_indicator_v2: ^0.5.0
+  linked_scroll_controller: ^0.2.0
+  local_auth: ^2.3.0
+  mobile_scanner: ^7.0.0
+  number_paginator: ^1.1.0
+  open_file: ^3.5.10
+  package_info_plus: ^8.3.0
+  path_provider: ^2.1.5
+  pdf: ^3.11.3
+  permission_handler: ^12.0.0+1
+  printing: ^5.14.2
+  responsive_builder: ^0.7.1
+  scrollable_positioned_list: ^0.3.8
+  search_highlight_text: ^1.0.0+2
+  signature: ^6.0.0
+  text_scroll: ^0.2.0
+  url_launcher: ^6.3.1
+
+  #firebase_core: ^3.13.1
+  #firebase_analytics: ^11.4.6
+  #firebase_crashlytics: ^4.3.6
+
+  #mobile_device_identifier: ^0.0.3
+  #safe_device: ^1.2.1
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  # The "flutter_lints" package below contains a set of recommended lints to
+  # encourage good coding practices. The lint set provided by the package is
+  # activated in the `analysis_options.yaml` file located at the root of your
+  # package. See that file for information about deactivating specific lint
+  # rules and activating additional ones.
+  flutter_launcher_icons: ^0.14.3
+  flutter_lints: ^6.0.0
+  rename_app: ^1.6.3
+
+  #build_runner: ^2.4.15
+  #build_web_compilers: ^4.1.4
+  #very_good_analysis: ^7.0.0
+
+flutter_launcher_icons:
+  android: true
+  ios: true
+  image_path: "assets/logos/daw_logo_single.png"
+  min_sdk_android: 24
+  remove_alpha_ios: true
+
+dependency_overrides:
+#intl: ^0.20.2
+
+# For information on the generic Dart part of this file, see the
+# following page: https://dart.dev/tools/pub/pubspec
+
+# The following section is specific to Flutter packages.
+flutter:
+
+  # The following line ensures that the Material Icons font is
+  # included with your application, so that you can use the icons in
+  # the material Icons class.
+  uses-material-design: true
+
+  # To add assets to your application, add an assets section, like this:
+  assets:
+    - assets/
+    - assets/images/
+    - assets/logos/
+    - assets/gifs/
+    - assets/fonts/
+    - assets/docs_template/
+
+  # An image asset can refer to one or more resolution-specific "variants", see
+  # https://flutter.dev/to/resolution-aware-images
+
+  # For details regarding adding assets from package dependencies, see
+  # https://flutter.dev/to/asset-from-package
+
+  # To add custom fonts to your application, add a fonts section here,
+  # in this "flutter" section. Each entry in this list should have a
+  # "family" key with the font family name, and a "fonts" key with a
+  # list giving the asset and other descriptors for the font. For example:
+  fonts:
+    - family: Icons
+      fonts:
+        - asset: assets/fonts/Cupertino-Icons.ttf
+        - asset: assets/fonts/Material-Icons.ttf
+    - family: OpenSans
+      fonts:
+        - asset: assets/fonts/OpenSans-Medium.ttf
+        - asset: assets/fonts/OpenSans-Regular.ttf
+    - family: Poppins
+      fonts:
+        - asset: assets/fonts/Poppins-Black.ttf
+        - asset: assets/fonts/Poppins-BlackItalic.ttf
+        - asset: assets/fonts/Poppins-Bold.ttf
+        - asset: assets/fonts/Poppins-BoldItalic.ttf
+        - asset: assets/fonts/Poppins-ExtraBold.ttf
+        - asset: assets/fonts/Poppins-ExtraBoldItalic.ttf
+        - asset: assets/fonts/Poppins-ExtraLight.ttf
+        - asset: assets/fonts/Poppins-ExtraLightItalic.ttf
+        - asset: assets/fonts/Poppins-Italic.ttf
+        - asset: assets/fonts/Poppins-Light.ttf
+        - asset: assets/fonts/Poppins-LightItalic.ttf
+        - asset: assets/fonts/Poppins-Medium.ttf
+        - asset: assets/fonts/Poppins-MediumItalic.ttf
+        - asset: assets/fonts/Poppins-Regular.ttf
+        - asset: assets/fonts/Poppins-SemiBold.ttf
+        - asset: assets/fonts/Poppins-SemiBoldItalic.ttf
+        - asset: assets/fonts/Poppins-Thin.ttf
+        - asset: assets/fonts/Poppins-ThinItalic.ttf
+
+  # For details regarding fonts from package dependencies,
+  # see https://flutter.dev/to/font-from-package
